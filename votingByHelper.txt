@@ -1,0 +1,32 @@
+2) In Bitcoin, a "helper" is elected to select which transactions from the pool will go into the block that is about to be mined. Propose two mechanisms to conduct this election process. Hint: use hash functions. 
+
+The mechanism to conduct this election process are via Consensus protocols. The two primary protocols that ase be used to conduct are as follows:
+
+i.Proof of Work (POW)
+
+ii.Proof of Capacity(POC)
+
+
+Approach:
+Let's say we have a voting function y=f(x) and we need to find x. Also, If a miner manages to solve the puzzle(using Hash function), the new block is formed and this is orchestrated by "helper".
+Note: I can go deep into hash functions details, but wanted to focus on the algorithm part. 
+
+
+i.Proof of Work (POW)
+
+a.The "helper" will send the puzzle to miners - thsi basically are the transactions from the pool that will go into the block that is about to be mined
+b.Miners send the solution to the "helper"
+c."helper" sends it to existing blocks to validate the solutions
+d.If validates and approved, then election is done with the Miners being awarded.
+e. End result: Election is complete
+
+
+ii.Proof of Capacity (POC) :
+a.The "helper" will send the puzzle to miners and add a nonce.
+Note:a.Nonces are created through repeated hashing of data, including your ID of the each member here.
+     b.This basically are the transactions from the pool that will go into the block that is about to be mined
+b.Miners will need to do plotting on their hard drive. 
+c.Here Miners will calculate a scoop number and then use this scoop data to calculate the deadline.
+d.If Miner can forge a block within the deadline, Miners will be given the right to vote
+e.If validated and approved, then election is done with the Miners being awarded.
+End result: Election is complete
